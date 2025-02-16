@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+    <!-- Main Source Files -->
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" ></script>
+    <script src="../wailsjs/go/models.ts"></script>
+    <script src="../wailsjs/go/main/App.js"></script>
+
+
+</head>
+
+<body id="app" class="app">
+<header>
+    <!--  -->
+</header>
+<main>
+    <div class="logo"></div>
+    <!-- <div class="result" id="result">Please enter your name below 👇</div>
+    <div class="input-box" id="input">
+        <input class="input" id="name" type="text" autocomplete="off" onkeydown="if (event.keyCode === 13) {greet()}" />
+        <button class="btn" onclick="greet()">Greet</button>
+    </div> -->
+
+    <div id="myDIV" class="header">
+        <h2>To-Do List ☺</h2>
+
+        <div class="input">
+            <input type="text" id="myInput" placeholder="Task name">
+            <select id="priorityInput" class="deadline">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <div class="input">
+            <input class="deadline" type="time" id="timeInput">
+            <input class="deadline" type="date" id="dateInput">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+    </div>
+    <hr>
+    <ul id="myUL">
+
+    </ul>
+
+    <h2>Active Tasks</h2>
+    <ul id="activeUL"></ul>
+
+    <h2>Completed Tasks</h2>
+    <ul id="completedUL"></ul>
+
+    <!-- Modal for confirmation -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Вы точно хотите удалить эту задачу?</p>
+            <button id="confirmDelete">Удалить</button>
+            <button id="cancelDelete">Отмена</button>
+        </div>
+    </div>
+
+
+</main>
+<footer>
+    <!--  -->
+</footer>
+
+
+</body>
+
+</html>
