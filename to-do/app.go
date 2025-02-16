@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 )
 
 // App struct
@@ -10,18 +9,27 @@ type App struct {
 	ctx context.Context
 }
 
-// NewApp creates a new App application struct
+// NewApp создает новый экземпляр приложения
 func NewApp() *App {
 	return &App{}
 }
 
-// startup is called when the app starts. The context is saved
-// so we can call the runtime methods
+// startup вызывается при запуске приложения
 func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Greet returns a greeting for the given name
-func (a *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
+// domReady вызывается, когда DOM загружен
+func (a *App) domReady(_ context.Context) {
+	// Код, который должен выполниться при загрузке фронта
+}
+
+// beforeClose вызывается перед закрытием окна
+func (a *App) beforeClose(ctx context.Context) bool {
+	return false // Позволяем закрыть приложение
+}
+
+// shutdown вызывается при завершении работы приложения
+func (a *App) shutdown(ctx context.Context) {
+	// Очистка ресурсов перед выходом
 }
