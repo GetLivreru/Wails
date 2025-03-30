@@ -1,55 +1,52 @@
 # Wails To-Do App
 
-## 📌 Описание
-Этот проект — кросс-платформенное **desktop-приложение** для управления списком задач (To-Do List), разработанное с использованием **Wails (Go + JavaScript)**.
+## 📌 Description
+This project is a cross-platform **desktop application** for managing a to-do list, developed using **Wails (Go + JavaScript)**.
 
-### 🎯 **Основные функции:**
-✅ Добавление задач
-✅ Отображение списка задач
-✅ Отметка задач как выполненных
-✅ Удаление задач
-✅ Сохранение списка между сессиями (локальное хранилище)
+### 🎯 **Key Features:**
+✅ Add tasks  
+✅ Display task list  
+✅ Mark tasks as completed  
+✅ Delete tasks  
+✅ Persist tasks between sessions (local storage)  
 
-## 🚀 Запуск проекта
+## 🚀 Getting Started
 
-### 1️⃣ Установка зависимостей
-Убедитесь, что у вас установлены **Go**, **Node.js**, **Wails CLI**:
+### 1️⃣ Install Dependencies
+Ensure you have **Go**, **Node.js**, and **Wails CLI** installed:
 ```sh
-# Установка Wails CLI
+# Install Wails CLI
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
 ```
 
-### 2️⃣ Клонирование репозитория
+### 2️⃣ Clone the Repository
 ```sh
 git clone https://github.com/GetLivreru/Wails.git
 cd Wails
 ```
 
-### 3️⃣ Установка зависимостей для фронтенда
+### 3️⃣ Install Frontend Dependencies
 ```sh
 cd frontend
 npm install
 cd ..
 ```
 
-### 4️⃣ Запуск в режиме разработки
+### 4️⃣ Run in Development Mode
 ```sh
 wails dev
 ```
 
-### 5️⃣ Сборка проекта
+### 5️⃣ Build the Project
 ```sh
 wails build
 ```
-Исполняемый файл появится в `build/bin/`
+The executable file will appear in `build/bin/`.
 
-## 🛠 Технологии
-- **Backend:** Go + Wails
-- **Frontend:** JavaScript (Vanilla JS, CSS, HTML)
-- **Сохранение данных:** JSON-файл
+## 🛠 Technologies
+- **Backend:** Go + Wails  
+- **Frontend:** JavaScript (Vanilla JS, CSS, HTML)  
+- **Data Persistence:** JSON file  
 
-## 📸 Скриншоты
-_![image](https://github.com/user-attachments/assets/aab47d10-baed-4e90-a8ef-d82e192c9d90)
-_
-
-
+## 📸 Screenshots
+_![image](https://github.com/user-attachments/assets/aab47d10-baed-4e90-a8ef-d82e192c9d90)_
